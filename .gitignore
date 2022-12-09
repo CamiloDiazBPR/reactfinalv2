@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+/gitignore
+/README
+
+
 # misc
 .DS_Store
 .env.local
