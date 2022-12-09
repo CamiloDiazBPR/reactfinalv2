@@ -1,0 +1,13 @@
+.Back{
+    background-color: white;
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.text{
+    justify-content: center;
+    text-align: center;
+}

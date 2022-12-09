@@ -1,0 +1,30 @@
+.Back{
+    background-color: white;
+}
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.title2{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.text{
+    justify-content: center;
+    text-align: center;
+}
+
+.artist{
+
+    text-align: center;
+    font-size: 2rem;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 20px;
+    list-style: none;
+    text-decoration: none; 
+    color: black;
+}
