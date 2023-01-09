@@ -4,29 +4,32 @@
 
 .title{
     text-align: center;
-    font-size: 4rem;
-    align-self: baseline;
+    font-size: 5rem;
 }
 
 .title2{
+    padding-top: 25px;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 2rem;
 }
 
 .text{
+    padding: 0;
+    margin: 0;
     justify-content: center;
     text-align: center;
+    list-style: none;
+    font-size: 2rem;
 }
 
 .artist{
-
+    
     text-align: center;
     font-size: 2rem;
     justify-content: space-around;
     gap: 10px;
     margin: 20px;
     list-style: none;
-    text-decoration: none; 
-    color: black;
-    position: sticky;
+    text-decoration: none;    
+
 }

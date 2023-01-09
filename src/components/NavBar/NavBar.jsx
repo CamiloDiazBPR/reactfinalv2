@@ -26,10 +26,12 @@ const NavBar = () =>{
                 <li>
                     <Link to="/Contact" className={styles.Elemento}>CONTACT</Link>
                 </li>
-                <li>
-                    <Cart />
-                </li>
+
             </ul>
+
+
+            <Cart />
+
         
         </div>
     );

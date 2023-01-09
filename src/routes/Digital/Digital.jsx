@@ -1,16 +1,44 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import CartContext from '../../Context/CartContext'
 import styles from "./Digital.module.css"
+import { ProductsData } from './ProductData'
+import { Link } from 'react-router-dom';
 
 
-const Digital = () =>{
+export const Digital = () => {
+
+  const {AddItemToCart} = useContext(CartContext)
+  
+  
 
   return (
-    <div className={styles.Back}>
-    
-      <h1 className={styles.title}> Lanzamientos disponibles en digital </h1>
 
+    <div className={styles.productsContainer}>  
+
+      {ProductsData.map((product, i) =>(
+
+
+        <div key={1} className={styles.product}>
+
+          
+          
+          <img src={product.img} alt={product.name}/>
+
+          <div>          
+
+            <p className={styles.ReleaseName}>
+            <Link to={`../DigitalId/${product.id}`}>{product.name}</Link> - ${product.price}
+            </p>
+
+          </div>
+
+          <button onClick={() => AddItemToCart(product)}> Add to cart </button>
+          
+          </div>
+
+      ))}
     </div>
-  );
-};
+  )
+}
 
-export default Digital;
+export default Digital

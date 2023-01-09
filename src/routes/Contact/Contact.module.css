@@ -11,3 +11,23 @@
     justify-content: center;
     text-align: center;
 }
+
+.lista{
+
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+.Elemento{
+
+    text-decoration: none ;
+    color: white;
+    justify-content: right;
+    cursor: pointer;
+    
+}

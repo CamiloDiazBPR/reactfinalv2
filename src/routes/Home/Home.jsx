@@ -9,7 +9,7 @@ const Home = () =>{
     
       <h1 className={styles.title}> Bienvenidos a nuestra web </h1>
 
-      <p className={styles.text}> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi veritatis quaerat doloribus repellendus ut, rerum adipisci quidem commodi aliquid mollitia laborum omnis aut. Quisquam dicta, voluptas porro facilis beatae delectus.</p>
+      <p className={styles.text}> Aca podran encontrar el catálogo de lanzamientos más recientes, así como todos los artistas que pertenecen a nuestro sello </p>
 
     </div>
   );

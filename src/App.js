@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
+import { CartProvider } from './Context/CartContext';
 import Artist from './routes/Artist/Artist';
 import ArtistId from './routes/ArtistId/ArtistId';
 import Contact from './routes/Contact/Contact';
@@ -11,6 +12,7 @@ import Vinyl from './routes/Vinyl/Vinyl';
 
 function App() {
   return (
+    <CartProvider>
     <BrowserRouter>
     
 
@@ -33,6 +35,7 @@ function App() {
     
     </BrowserRouter>
 
+    </CartProvider>
 
 
   );

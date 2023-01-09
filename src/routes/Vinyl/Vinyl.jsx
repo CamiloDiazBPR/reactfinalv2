@@ -7,7 +7,7 @@ const Vinyl = () =>{
   return (
     <div className={styles.Back}>
     
-      <h1 className={styles.title}> Lanzamientos disponibles en vinyl </h1>
+      <h1 className={styles.title}> Page under construction </h1>
 
     </div>
   );
