@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import CartContext from "../../Context/CartContext";
 import ItemCart from "../itemCart";
 import styles from "./Cart.module.css"
@@ -8,6 +9,11 @@ const Cart = () =>{
     const [cartOpen, setCartOpen] = useState(false);
     const [productsLength, setProductsLength] = useState(0);
     const {cartItems} = useContext(CartContext);
+    const navigate = useNavigate();
+
+    const navigateToCheckout = () => {
+        navigate('/checkout');
+    };
 
     useEffect(() => {
          setProductsLength(
@@ -69,17 +75,26 @@ const Cart = () =>{
             </div>
             {cartItems && cartOpen && (
                 <div className={styles.cart}>
-                    <h2>Tu carrito</h2>
+                    <h2>TU CARRITO</h2>
 
                     {cartItems.length === 0 ? <p className={styles.cartVacio}>Tu carrito esta vacio</p> : (
 
                         <div className={styles.productsContainer}>{cartItems.map((item, i) => (
                             <ItemCart key={1} item={item} />
+
+                            
                         ))}
+                                                
+
                         </div>
+
+
                     )}
 
-                    <h2 className={styles.total}>total en USD: ${total}</h2>
+                    <h2 className={styles.total}> USD: ${total}</h2>
+                    <div >
+                        <button onClick={navigateToCheckout} className={styles.checkoutbt}>Checkout</button>
+                    </div>
                 </div>
             )}
         </div>

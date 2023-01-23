@@ -10,6 +10,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Techno",
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Tech House",
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Tech House",
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Tech House",
     },
     {
       id: 5,
@@ -54,6 +58,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Techno",
     },
     {
       id: 6,
@@ -65,6 +70,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Tech House",
     },
     {
       id: 7,
@@ -76,6 +82,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Tech House",
     },
     {
       id: 8,
@@ -87,6 +94,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Tech House",
     },
     {
       id: 9,
@@ -98,6 +106,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Tech House",
     },
     {
       id: 10,
@@ -109,6 +118,7 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Tech House",
     },
     {
       id: 11,
@@ -120,5 +130,6 @@ export const ProductsData = [
       Artist: "Camilo Diaz",
       Copyright: "All Right Reserved - Bullet Proof Records",
       Tracks: "Gear Third (Original Mix) - Boundman (Original Mix)",
+      Cat: "Techno",
     },
   ];
