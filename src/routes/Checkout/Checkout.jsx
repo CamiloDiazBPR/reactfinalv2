@@ -2,19 +2,14 @@ import React, { useContext, useEffect, useState } from "react";
 import CartContext from "../../Context/CartContext";
 import styles from "./Checkout.module.css"
 import ItemCart from "../itemCart";
-import { useNavigate } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 const Checkout = () =>{
     
     const [productsLength, setProductsLength] = useState(0);
     const {cartItems} = useContext(CartContext);
-    const navigate = useNavigate();
 
-    const navigateToFinish = () => {
-        
-        navigate('/finish');
 
-    };
 
     useEffect(() => {
         setProductsLength(
@@ -43,41 +38,14 @@ const Checkout = () =>{
 
         <h2 className={styles.total}>Total en USD: ${total}</h2>
 
+        <ContactForm />
 
-        <div>
-
-            <h2 className={styles.title2}>Informacion personal</h2>
-
-        <form className={styles.form}>
-            <label>
-                Name:
-                <input className={styles.field} type="text" name="name" />
-            </label>
-            <label>
-                Address:
-                <input className={styles.field} type="text" name="Adress" />
-            </label>
-            <label>
-                Zip Code:
-                <input className={styles.field} type="text" name="Zip Code" />
-            </label>
-            <label>
-                Phone:
-                <input className={styles.field} type="text" name="Phone" />
-            </label>
-            <label>
-                Mail:
-                <input className={styles.field} type="text" name="Mail" />
-            </label>
-                
-        </form>
-        <button onClick={navigateToFinish} className={styles.bttn}>Enviar</button>
-
-        </div>
 
         </div>
 
     )
+
+    
 
 }
 

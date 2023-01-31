@@ -45,26 +45,38 @@
     margin-left: 350px;
     margin-right: 350px;
     font-size: 25px;
+    gap: 10px;
+    justify-content: space-evenly;
 
 }
 
 .bttn{
+
+ 
     width: 200px;
     border-radius: 9px;
     height: 40px;
-    margin-left: 450px;
-    margin-bottom: 20px;
     background-color: gray;
     color: white;
     font-size: 20px;
     font-weight: bold;
+
 }
 
 .field{
 
+    display: flex;
     height: 25px;
     padding-left: 10px;
     margin-left: 10px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.inputs{
+    display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
