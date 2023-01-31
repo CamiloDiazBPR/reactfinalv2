@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState  } from 'react'
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import CartContext from '../../Context/CartContext'
 import styles from "./Digital.module.css"
 import { ProductsData } from './ProductData'
-import { Link } from 'react-router-dom';
 import Buttons from "./Buttons";
 import Card from "./Card";
 
@@ -24,12 +24,12 @@ export const Digital = ({}) => {
 
   useEffect (() => {
 
-    
-
-    fetch('https://testapi.io/api/CamiloDiazBPR/releases')
-    .then((res) => res.json())
-    .then(setRelease)
-
+    const db = getFirestore();
+    const  itemsCollection = collection(db, 'Releases');
+    getDocs(itemsCollection).then((snapshot) => {
+      console.log('snapshot', 
+      setRelease(snapshot.docs.map((doc) => ({id: doc.id, ...doc.data()}))))
+    })
 
 
   },[])
