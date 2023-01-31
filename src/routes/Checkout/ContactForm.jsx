@@ -5,12 +5,13 @@ import { useState } from "react";
 import { addDoc, getFirestore, collection } from "firebase/firestore";
 
 const ContactForm = () =>{
-    
 
+    const [id, setId] = useState();
     const navigate = useNavigate();
     const navigateToFinish = () => {
         navigate('/finish');
     };
+
 
     const [form, setForm] = useState({
         name:'',
@@ -25,7 +26,15 @@ const ContactForm = () =>{
         const db = getFirestore()
         const formsCollection = collection(db, "forms");
 
-        addDoc(formsCollection, form).then(snapshot => {console.log(snapshot.id)})
+        addDoc(formsCollection, form).then((snapshot) => {
+            setForm({
+                name:'',
+                email:'',
+                phone:'',
+                message:'',
+            });
+            setId(snapshot.id);
+          });
     }
 
     const changeHandler = (ev) => {
@@ -38,6 +47,7 @@ const ContactForm = () =>{
         <div>
 
         <h2 className={styles.title2}>Informacion personal</h2>
+
 
             <form onSubmit={submitHandler} className={styles.form}>
                 <div>
